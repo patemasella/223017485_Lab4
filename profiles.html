@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profiles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="form.html">Register</a> |
+    <a href="summary.html">Summary</a>
+  </nav>
+
+  <h1>Registered Profiles</h1>
+
+  <!-- Container where JS will render cards -->
+  <div id="cards"></div>
+  <!-- Edit Modal -->
+<div id="editModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Edit Student</h2>
+    <form id="editForm">
+      <label for="editName">Name:</label>
+      <input type="text" id="editName" required>
+
+      <label for="editEmail">Email:</label>
+      <input type="email" id="editEmail" required>
+
+      <label for="editProgramme">Programme:</label>
+      <input type="text" id="editProgramme" required>
+
+      <label for="editYear">Year:</label>
+      <input type="number" id="editYear" required>
+
+      <label for="editInterests">Interests:</label>
+      <input type="text" id="editInterests" required>
+
+      <label for="editPhotoFile">Photo (optional):</label>
+      <input type="file" id="editPhotoFile" accept="image/*">
+
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+</div>
+
+<p>support: <a href="mailto:pasella2010@gmail.com">pasella2010@gmail.com</a></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Students Summary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Registered Students Summary</h1>
+    <nav>
+      <a href="form.html">Register New Student</a> |
+      <a href="profiles.html">View Profiles</a>
+    </nav>
+  </header>
+
+  <!-- Summary Table -->
+  <section>
+    <table id="summaryTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Programme</th>
+          <th>Year</th>
+          <th>Interests</th>
+          <th>Photo</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="summaryTableBody">
+        <!-- Populated dynamically by script.js -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Edit Modal (shared across pages) -->
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Edit Student</h2>
+      <form id="editForm">
+        <label for="editName">Name:</label>
+        <input type="text" id="editName" required>
+
+        <label for="editEmail">Email:</label>
+        <input type="email" id="editEmail" required>
+
+        <label for="editProgramme">Programme:</label>
+        <input type="text" id="editProgramme" required>
+
+        <label for="editYear">Year:</label>
+        <input type="number" id="editYear" required>
+
+        <label for="editInterests">Interests:</label>
+        <input type="text" id="editInterests" required>
+
+        <label for="editPhotoFile">Photo (optional):</label>
+        <input type="file" id="editPhotoFile" accept="image/*">
+
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>support: <a href="mailto:pasella2010@gmail.com">pasella2010@gmail.com</a></p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

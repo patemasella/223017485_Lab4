@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="profiles.html">Profiles</a> |
+    <a href="summary.html">Summary</a>
+  </nav>
+
+  <h1>Registration Form</h1>
+
+  <form id="registrationForm" aria-label="Registration form">
+    <!-- Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" required aria-describedby="nameError">
+    <span class="error" id="nameError">Name must be at least 3 characters.</span>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" required aria-describedby="emailError">
+    <span class="error" id="emailError">Please enter a valid email address.</span>
+
+    <!-- Programme -->
+    <label for="programme">Programme:</label>
+    <input type="text" id="programme" required aria-describedby="programmeError">
+    <span class="error" id="programmeError">Programme must be at least 5 characters.</span>
+
+    <!-- Year -->
+    <label for="year">Year:</label>
+    <input type="number" id="year" required aria-describedby="yearError">
+    <span class="error" id="yearError">Year must be a positive integer.</span>
+
+    <!-- Interests -->
+    <label for="interests">Interests:</label>
+    <input type="text" id="interests" required aria-describedby="interestsError">
+    <span class="error" id="interestsError">Interests must be at least 5 characters.</span>
+
+    <!-- Photo Upload -->
+    <label for="photoFile">Upload Photo:</label>
+    <input type="file" id="photoFile" accept="image/*">
+
+    <!-- Submit -->
+    <button type="submit">Register</button>
+  </form>
+
+  <!-- Live feedback for screen readers -->
+  <div id="formFeedback"
+       class="visually-hidden"
+       role="status"
+       aria-live="polite"
+       aria-atomic="true">
+  </div>
+  
+  <p>support: <a href="mailto:pasella2010@gmail.com">pasella2010@gmail.com</a></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
