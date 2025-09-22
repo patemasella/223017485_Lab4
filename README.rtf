@@ -1,195 +1,59 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 TimesNewRomanPS-BoldMT;\f1\froman\fcharset0 TimesNewRomanPSMT;\f2\froman\fcharset0 Times-BoldItalic;
-\f3\froman\fcharset0 Times-Roman;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\sl368\sa133\partightenfactor0
+Name: Patemasella Gawanas (223017485)
+Simple Student Registration System
+This project is a web-based student registration system built with HTML, CSS, and JavaScript. It allows users to register students, view them as profile cards, edit their details, and see a summary table of all registered students. All data is stored in localStorage, so it persists across page reloads.
+Features
+Registration Form
+	•	Fully accessible with labels and ARIA attributes.
+	•	Inline validation with user feedback.
+	•	Upload student photo (optional).
+Profile Cards
+	•	Dynamically generated for each registered student.
+	•	Displays all student details including photo.
+	•	Edit and Remove buttons for each profile.
+Summary Table
+	•	Displays all registered students in tabular form.
+	•	Includes thumbnails of student photos.
+	•	Supports Edit and Remove functionality.
+	•	Edit & Cancel Edit
+	•	Edit a student by clicking the Edit button.
+	•	Cancel an edit using the Cancel Edit button.
+	•	Persistent Storage
+	•	Uses localStorage to save student data.
+	•	Data remains after page reload.
+	•	Responsive & Accessible Design
+	•	Keyboard navigation supported.
+	•	Adequate color contrast.
+	•	Screen reader-friendly using ARIA attributes.
+	•	
+Pages
+form.html – Home page with navigation links.
+profiles.html – Displays student profile cards.
+summary.html – Displays summary table of all students.
 
-\f0\b\fs32 \cf2 \expnd0\expndtw0\kerning0
-\ul \ulc2 Name: Patemasella Gawanas (223017485)
-\f1\b0 \ulnone \
+Installation
+Clone or download the repository.
+Open index.html in any modern web browser.
+No server is required; everything runs in the browser.
 
-\f0\b \ul Simple Student Registration System
-\f1\b0 \ulnone \
-\pard\pardeftab720\sl368\sa133\qj\partightenfactor0
-\cf2 This project is a\'a0web-based student registration system\'a0built with\'a0HTML, CSS, and JavaScript. It allows users to register students, view them as\'a0profile cards, edit their details, and see a\'a0summary table\'a0of all registered students. All data is stored in\'a0localStorage, so it persists across page reloads.\
-\pard\pardeftab720\sl368\sa213\partightenfactor0
+Usage
+Fill out the registration form.
+Optionally upload a student photo.
+Click Register to save the student.
+Navigate to Profiles to see the profile cards.
+Navigate to Summary to view the table of students.
+Click Edit to update a student.
+Click Remove to delete a student.
+Use Cancel Edit to cancel editing any student.
 
-\f2\i\b \cf2 Features
-\f1\i0\b0 \
-\pard\pardeftab720\sl368\sa213\partightenfactor0
+Technologies
+HTML5 – Semantic and accessible structure.
+CSS3 – Styled using a color palette: #0077cc and #ddd.
+JavaScript – Dynamic DOM manipulation, form validation, localStorage.
 
-\f3 \cf2 Registration Form
-\f1 \
-\pard\pardeftab720\li960\sl368\sa213\partightenfactor0
+Notes
+Photos are stored as Base64 strings in localStorage.
+All functionality works offline.
+Designed for desktop and mobile browsers.
 
-\f3 \cf2 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Fully accessible with labels and ARIA attributes.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Inline validation with user feedback.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Upload student photo (optional).
-\f1 \
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f3 \cf2 Profile Cards
-\f1 \
-\pard\pardeftab720\li960\sl368\sa213\partightenfactor0
-
-\f3 \cf2 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Dynamically generated for each registered student.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Displays all student details including photo.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Edit and Remove buttons for each profile.
-\f1 \
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f3 \cf2 Summary Table
-\f1 \
-\pard\pardeftab720\li960\sl368\sa213\partightenfactor0
-
-\f3 \cf2 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Displays all registered students in tabular form.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Includes thumbnails of student photos.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Supports Edit and Remove functionality.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Edit & Cancel Edit
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Edit a student by clicking the Edit button.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Cancel an edit using the Cancel Edit button.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Persistent Storage
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Uses localStorage to save student data.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Data remains after page reload.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Responsive & Accessible Design
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Keyboard navigation supported.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Adequate color contrast.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Screen reader-friendly using ARIA attributes.
-\f1 \
-
-\f3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 
-\f1 \
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f2\i\b \cf2 Pages
-\f1\i0\b0 \
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f3 \cf2 form.html \'96 Home page with navigation links.
-\f1 \
-
-\f3 profiles.html \'96 Displays student profile cards.
-\f1 \
-
-\f3 summary.html \'96 Displays summary table of all students.
-\f1 \
-\'a0\
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f2\i\b \cf2 Installation
-\f1\i0\b0 \
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f3 \cf2 Clone or download the repository.
-\f1 \
-
-\f3 Open index.html in any modern web browser.
-\f1 \
-
-\f3 No server is required; everything runs in the browser.
-\f1 \
-\'a0\
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f2\i\b \cf2 Usage
-\f1\i0\b0 \
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f3 \cf2 Fill out the registration form.
-\f1 \
-
-\f3 Optionally upload a student photo.
-\f1 \
-
-\f3 Click Register to save the student.
-\f1 \
-
-\f3 Navigate to Profiles to see the profile cards.
-\f1 \
-
-\f3 Navigate to Summary to view the table of students.
-\f1 \
-
-\f3 Click Edit to update a student.
-\f1 \
-
-\f3 Click Remove to delete a student.
-\f1 \
-
-\f3 Use Cancel Edit to cancel editing any student.
-\f1 \
-\'a0\
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f2\i\b \cf2 Technologies
-\f1\i0\b0 \
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f3 \cf2 HTML5 \'96 Semantic and accessible structure.
-\f1 \
-
-\f3 CSS3 \'96 Styled using a color palette: #0077cc and #ddd.
-\f1 \
-
-\f3 JavaScript \'96 Dynamic DOM manipulation, form validation, localStorage.
-\f1 \
-\'a0\
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f2\i\b \cf2 Notes
-\f1\i0\b0 \
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f3 \cf2 Photos are stored as Base64 strings in localStorage.
-\f1 \
-
-\f3 All functionality works offline.
-\f1 \
-
-\f3 Designed for desktop and mobile browsers.
-\f1 \
-\'a0\
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f2\i\b \cf2 License
-\f1\i0\b0 \
-\pard\pardeftab720\sl368\sa213\partightenfactor0
-
-\f3 \cf2 This project is open-source and free to use.
-\f1 \
-}
+License
+This project is open-source and free to use.
