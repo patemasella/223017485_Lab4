@@ -1,4 +1,4 @@
-#Name: Patemasella Gawanas (223017485)
+##Name: Patemasella Gawanas (223017485)
 #Simple Student Registration System
 This project is a web-based student registration system built with HTML, CSS, and JavaScript. It allows users to register students, view them as profile cards, edit their details, and see a summary table of all registered students. All data is stored in localStorage, so it persists across page reloads.
 Features
