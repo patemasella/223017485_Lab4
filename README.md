@@ -1,16 +1,16 @@
-Name: Patemasella Gawanas (223017485)
-Simple Student Registration System
+#Name: Patemasella Gawanas (223017485)
+#Simple Student Registration System
 This project is a web-based student registration system built with HTML, CSS, and JavaScript. It allows users to register students, view them as profile cards, edit their details, and see a summary table of all registered students. All data is stored in localStorage, so it persists across page reloads.
 Features
-Registration Form
+#Registration Form
 	•	Fully accessible with labels and ARIA attributes.
 	•	Inline validation with user feedback.
 	•	Upload student photo (optional).
-Profile Cards
+#Profile Cards
 	•	Dynamically generated for each registered student.
 	•	Displays all student details including photo.
 	•	Edit and Remove buttons for each profile.
-Summary Table
+#Summary Table
 	•	Displays all registered students in tabular form.
 	•	Includes thumbnails of student photos.
 	•	Supports Edit and Remove functionality.
@@ -25,17 +25,17 @@ Summary Table
 	•	Adequate color contrast.
 	•	Screen reader-friendly using ARIA attributes.
 	•	
-Pages
+#Pages
 form.html – Home page with navigation links.
 profiles.html – Displays student profile cards.
 summary.html – Displays summary table of all students.
 
-Installation
+#Installation
 Clone or download the repository.
 Open index.html in any modern web browser.
 No server is required; everything runs in the browser.
 
-Usage
+#Usage
 Fill out the registration form.
 Optionally upload a student photo.
 Click Register to save the student.
@@ -45,15 +45,15 @@ Click Edit to update a student.
 Click Remove to delete a student.
 Use Cancel Edit to cancel editing any student.
 
-Technologies
+#Technologies
 HTML5 – Semantic and accessible structure.
 CSS3 – Styled using a color palette: #0077cc and #ddd.
 JavaScript – Dynamic DOM manipulation, form validation, localStorage.
 
-Notes
+#Notes
 Photos are stored as Base64 strings in localStorage.
 All functionality works offline.
 Designed for desktop and mobile browsers.
 
-License
+#License
 This project is open-source and free to use.
